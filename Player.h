@@ -20,7 +20,7 @@ public:
 	Vector2 pos_{ };
 
 	
-	float speed_=1.0f;
+	float speed_=5.0f;
 
 };
 

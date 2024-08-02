@@ -1,23 +1,21 @@
 #pragma once
 #include <Novice.h>
 #include"Vector2.h"
-class Player
+class Enemy
 {
 public:
-	~Player();
-	Player();
+	~Enemy();
+	Enemy();
 
 	void Init();
 	void Update();
 	void Draw();
-
-	void MoveRight();
-	void MoveLeft();
-
+	void Move();
 
 private:
 	Vector2 pos_{ };
-	float speed_=5.0f;
+	float speed_ = 7.0f;
+	float size_ = 50.0f;
 
 };
 

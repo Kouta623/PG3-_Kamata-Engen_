@@ -12,6 +12,10 @@ void StageScene::Init()
 
 	player_ = new Player();
 	player_->Init();
+
+	enemy_ = new Enemy();
+	enemy_->Init();
+
 }
 
 
@@ -23,6 +27,7 @@ void StageScene::Update(char* Keys, char *preKeys)
 	}
 
 	player_->Update();
+	enemy_->Update();
 
 	if (preKeys[DIK_SPACE] == 0 && Keys[DIK_SPACE]) {
 		scnenNo = CLEAR;
@@ -36,4 +41,5 @@ void StageScene::Draw()
 	
 	Novice::ScreenPrintf(0, 0, "StageScene");
 	player_->Draw();
+	enemy_->Draw();
 }

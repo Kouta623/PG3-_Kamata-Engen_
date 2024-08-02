@@ -3,6 +3,7 @@
 //#include "dinput.h"
 #include"Novice.h"
 #include "Player.h"
+#include"Enemy.h"
 #include "InputHandle.h"
 #include "comand.h"
 
@@ -13,6 +14,7 @@ private:
 	InputHandle* inputHandle_ = nullptr;
 	IComand* iCommand_ = nullptr;
 	Player* player_ = nullptr;
+	Enemy* enemy_ = nullptr;
 
 public:
 	StageScene();
